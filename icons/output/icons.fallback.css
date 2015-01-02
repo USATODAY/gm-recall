@@ -1,0 +1,224 @@
+.icon-SUV-5, .active .icon-SUV { background-image: url('png/SUV-5.png'); background-repeat: no-repeat; }
+
+.icon-compact-0 { background-image: url('png/compact-0.png'); background-repeat: no-repeat; }
+
+.icon-compact-1 { background-image: url('png/compact-1.png'); background-repeat: no-repeat; }
+
+.icon-compact-2 { background-image: url('png/compact-2.png'); background-repeat: no-repeat; }
+
+.icon-compact-3 { background-image: url('png/compact-3.png'); background-repeat: no-repeat; }
+
+.icon-compact-4 { background-image: url('png/compact-4.png'); background-repeat: no-repeat; }
+
+.icon-compact-5, .active .icon-compact { background-image: url('png/compact-5.png'); background-repeat: no-repeat; }
+
+.icon-compact  { background-image: url('png/compact.png'); background-repeat: no-repeat; }
+
+.icon-full-size-0 { background-image: url('png/full-size-0.png'); background-repeat: no-repeat; }
+
+.icon-full-size-1 { background-image: url('png/full-size-1.png'); background-repeat: no-repeat; }
+
+.icon-full-size-2 { background-image: url('png/full-size-2.png'); background-repeat: no-repeat; }
+
+.icon-full-size-3 { background-image: url('png/full-size-3.png'); background-repeat: no-repeat; }
+
+.icon-full-size-4 { background-image: url('png/full-size-4.png'); background-repeat: no-repeat; }
+
+.icon-full-size-5, .active .icon-full-size { background-image: url('png/full-size-5.png'); background-repeat: no-repeat; }
+
+.icon-full-size { background-image: url('png/full-size.png'); background-repeat: no-repeat; }
+
+.icon-mid-size-0 { background-image: url('png/mid-size-0.png'); background-repeat: no-repeat; }
+
+.icon-mid-size-1 { background-image: url('png/mid-size-1.png'); background-repeat: no-repeat; }
+
+.icon-mid-size-2 { background-image: url('png/mid-size-2.png'); background-repeat: no-repeat; }
+
+.icon-mid-size-3 { background-image: url('png/mid-size-3.png'); background-repeat: no-repeat; }
+
+.icon-mid-size-4 { background-image: url('png/mid-size-4.png'); background-repeat: no-repeat; }
+
+.icon-mid-size-5, .active .icon-mid-size { background-image: url('png/mid-size-5.png'); background-repeat: no-repeat; }
+
+.icon-mid-size { background-image: url('png/mid-size.png'); background-repeat: no-repeat; }
+
+.icon-roadster-0 { background-image: url('png/roadster-0.png'); background-repeat: no-repeat; }
+
+.icon-roadster-1 { background-image: url('png/roadster-1.png'); background-repeat: no-repeat; }
+
+.icon-roadster-2 { background-image: url('png/roadster-2.png'); background-repeat: no-repeat; }
+
+.icon-roadster-3 { background-image: url('png/roadster-3.png'); background-repeat: no-repeat; }
+
+.icon-roadster-5, .active .icon-roadster { background-image: url('png/roadster-5.png'); background-repeat: no-repeat; }
+
+.icon-roadster { background-image: url('png/roadster.png'); background-repeat: no-repeat; }
+
+.icon-sports-0 { background-image: url('png/sports-0.png'); background-repeat: no-repeat; }
+
+.icon-sports-1 { background-image: url('png/sports-1.png'); background-repeat: no-repeat; }
+
+.icon-sports-2 { background-image: url('png/sports-2.png'); background-repeat: no-repeat; }
+
+.icon-sports-3 { background-image: url('png/sports-3.png'); background-repeat: no-repeat; }
+
+.icon-sports-4 { background-image: url('png/sports-4.png'); background-repeat: no-repeat; }
+
+.icon-sports-5, .active .icon-sports { background-image: url('png/sports-5.png'); background-repeat: no-repeat; }
+
+.icon-sports { background-image: url('png/sports.png'); background-repeat: no-repeat; }
+
+.icon-station-wagon-0 { background-image: url('png/station-wagon-0.png'); background-repeat: no-repeat; }
+
+.icon-station-wagon-1 { background-image: url('png/station-wagon-1.png'); background-repeat: no-repeat; }
+
+.icon-station-wagon-2 { background-image: url('png/station-wagon-2.png'); background-repeat: no-repeat; }
+
+.icon-station-wagon-3 { background-image: url('png/station-wagon-3.png'); background-repeat: no-repeat; }
+
+.icon-station-wagon-4 { background-image: url('png/station-wagon-4.png'); background-repeat: no-repeat; }
+
+.icon-station-wagon-5, .active .icon-station-wagon { background-image: url('png/station-wagon-5.png'); background-repeat: no-repeat; }
+
+.icon-station-wagon { background-image: url('png/station-wagon.png'); background-repeat: no-repeat; }
+
+.icon-subcompact-0 { background-image: url('png/subcompact-0.png'); background-repeat: no-repeat; }
+
+.icon-subcompact-1 { background-image: url('png/subcompact-1.png'); background-repeat: no-repeat; }
+
+.icon-subcompact-2 { background-image: url('png/subcompact-2.png'); background-repeat: no-repeat; }
+
+.icon-subcompact-3 { background-image: url('png/subcompact-3.png'); background-repeat: no-repeat; }
+
+.icon-subcompact-4 { background-image: url('png/subcompact-4.png'); background-repeat: no-repeat; }
+
+.icon-subcompact-5, .active .icon-subcompact { background-image: url('png/subcompact-5.png'); background-repeat: no-repeat; }
+
+.icon-subcompact { background-image: url('png/subcompact.png'); background-repeat: no-repeat; }
+
+.icon-suv-0 { background-image: url('png/suv-0.png'); background-repeat: no-repeat; }
+
+.icon-suv-1 { background-image: url('png/suv-1.png'); background-repeat: no-repeat; }
+
+.icon-suv-2 { background-image: url('png/suv-2.png'); background-repeat: no-repeat; }
+
+.icon-suv-3 { background-image: url('png/suv-3.png'); background-repeat: no-repeat; }
+
+.icon-suv-4 { background-image: url('png/suv-4.png'); background-repeat: no-repeat; }
+
+.icon-suv { background-image: url('png/suv.png'); background-repeat: no-repeat; }
+
+.icon-truck-0 { background-image: url('png/truck-0.png'); background-repeat: no-repeat; }
+
+.icon-truck-1 { background-image: url('png/truck-1.png'); background-repeat: no-repeat; }
+
+.icon-truck-2 { background-image: url('png/truck-2.png'); background-repeat: no-repeat; }
+
+.icon-truck-3 { background-image: url('png/truck-3.png'); background-repeat: no-repeat; }
+
+.icon-truck-4 { background-image: url('png/truck-4.png'); background-repeat: no-repeat; }
+
+.icon-truck-5, .active .icon-truck { background-image: url('png/truck-5.png'); background-repeat: no-repeat; }
+
+.icon-truck { background-image: url('png/truck.png'); background-repeat: no-repeat; }
+
+.icon-van-0 { background-image: url('png/van-0.png'); background-repeat: no-repeat; }
+
+.icon-van-1 { background-image: url('png/van-1.png'); background-repeat: no-repeat; }
+
+.icon-van-2 { background-image: url('png/van-2.png'); background-repeat: no-repeat; }
+
+.icon-van-3 { background-image: url('png/van-3.png'); background-repeat: no-repeat; }
+
+.icon-van-4 { background-image: url('png/van-4.png'); background-repeat: no-repeat; }
+
+.icon-van-5 .active .icon-van { background-image: url('png/van-5.png'); background-repeat: no-repeat; }
+
+.icon-van { background-image: url('png/van.png'); background-repeat: no-repeat; }
+
+.icon-person-0 {
+  background-image: url('png/person-0.png');
+  background-repeat: no-repeat;
+}
+
+ 
+.icon-person-1 {
+  background-image: url('png/person-1.png');
+  background-repeat: no-repeat;
+}
+
+ 
+.icon-person-2 {
+  background-image: url('png/person-2.png');
+  background-repeat: no-repeat;
+}
+
+ 
+.icon-person-3 {
+  background-image: url('png/person-3.png');
+  background-repeat: no-repeat;
+}
+
+ 
+.icon-person-4 {
+  background-image: url('png/person-4.png');
+  background-repeat: no-repeat;
+}
+
+ 
+.icon-person-5 {
+  background-image: url('png/person-5.png');
+  background-repeat: no-repeat;
+}
+
+ 
+.icon-person {
+  background-image: url('png/person.png');
+  background-repeat: no-repeat;
+}
+
+ 
+.icon-simple-car-0 {
+  background-image: url('png/simple-car-0.png');
+  background-repeat: no-repeat;
+}
+
+ 
+.icon-simple-car-1 {
+  background-image: url('png/simple-car-1.png');
+  background-repeat: no-repeat;
+}
+
+ 
+.icon-simple-car-2 {
+  background-image: url('png/simple-car-2.png');
+  background-repeat: no-repeat;
+}
+
+ 
+.icon-simple-car-3 {
+  background-image: url('png/simple-car-3.png');
+  background-repeat: no-repeat;
+}
+
+ 
+.icon-simple-car-4 {
+  background-image: url('png/simple-car-4.png');
+  background-repeat: no-repeat;
+}
+
+ 
+.icon-simple-car-5 {
+  background-image: url('png/simple-car-5.png');
+  background-repeat: no-repeat;
+}
+
+ 
+.icon-simple-car {
+  background-image: url('png/simple-car.png');
+  background-repeat: no-repeat;
+}
+
+
+
+

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
+  <meta property="fb:app_id" content="215046668549694"/>
+  <meta property="og:description" content="General Motors recalls this year encompass more than 26.41 million vehicles. Explore USA TODAY Network’s interactive graphic and discover the types of recalls, which cars are impacted and the number of people who are affected."/>
+  <meta property="og:image" content="http://www.gannett-cdn.com/experiments/usatoday/2014/gm-recall/img/fb-post.jpg">
+  <meta property="og:url" content="http://www.gannett-cdn.com/experiments/usatoday/2014/gm-recall/"/>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="2014 GM Recalls"/>
+  <title>GM Recalls</title>
+  <link rel="stylesheet" href="http://usatoday30.usatoday.com/_common/_fonts/fonts.css" />
+
+  <link type="text/css" href="style/project.css" rel="stylesheet" />
+  <script type="text/javascript" src="http://i.usatoday.net/_common/_scripts/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="http://i.usatoday.net/_common/_scripts/modernizr.js"></script>
+  <script src="bower_components/handlebars/handlebars.min.js"></script>
+  <script src="bower_components/isotope/dist/isotope.pkgd.min.js"></script>
+
+  <script src="js/app.min.js"></script>
+  <link rel="shortcut icon" href="http://www.gannett-cdn.com/sites/usatoday/images/favicon.png">
+    <!-- START OMNITURE /// BE SURE TO UPDATE FOR THIS CODE FOR YOUR SPECIFIC PROJECT -->
+    <script>
+      if (window == window.top) {
+          window.utag_data = {
+              cst: 'Nation-Now/GM-Recall',
+              hostname: 'www.usatoday.com',
+              partner_type: 'basic',
+              ssts: 'Life/Entertainment',
+              prop16: 'interactives',
+              contenttype: 'interactives'
+          };
+      }
+    </script>
+    <script src="//tealium.hs.llnwd.net/o43/utag/gci/usat/prod/utag.js"></script>
+    <!-- END OMNITURE -->
+    <script src="http://i.usatoday.net/_common/_scripts/analytics.js" type="text/javascript"></script>
+</head>
+
+<body>
+<iframe id="header" width="100%" height="39" frameborder="0" scrolling="no" src="http://www.usatoday.com/services/cobrand/header/"></iframe>
+
+<div class="wrap">
+  <div class="head-section">
+    <div class="head-content-wrap">
+      <h2>2014 GM Recalls</h2>
+      <p class="chatter">General Motors recalls, as of August 8, encompass more than 29 million vehicles, across North America including exports. Explore USA TODAY Network’s interactive graphic and discover the types of recalls, which cars are impacted and the number of vehicles affected.</p>
+    </div>
+    <!-- <div class="toggle-tab"><div class="toggle-item current">Cars</div><div class="toggle-item">People</div></div> -->
+    <div class="social"> <a href="javascript: window.open('https://twitter.com/intent/tweet?url=http%3A%2F%2Fbit.ly%2F1wyMp5r&text=Infographic:%2029%20million%20vehicles%20affected%20by%20GM%20recalls%20this%20year.&via=usatoday', 'twitterwindow', 'height=450, width=550, top=200, left=200, toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');Analytics.click('Twitter share');void(0);"><img src="img/twitter.png" alt="Share on Twitter" class="social-icon" border="0"></a> <a href="javascript: var sTop=window.screen.height/2-(218);var sLeft=window.screen.width/2-(313);window.open('https://www.facebook.com/dialog/feed?display=popup&app_id=215046668549694&link=http%3A%2F%2Fbit.ly%2F1wyMp5r&picture=http://www.gannett-cdn.com/experiments/usatoday/2014/gm-recall/img/fb-post.jpg&name=2014%20GM%20Recalls&description=Infographic:%2029%20million%20vehicles%20affected%20by%20GM%20recalls%20this%20year.&redirect_uri=http://usatoday30.usatoday.com/_common/_dialogs/fb-share-done.html','sharer','toolbar=0,status=0,width=580,height=400,top='+sTop+',left='+sLeft);Analytics.click('Facebook share');void(0);"><img src="img/facebook.png" alt="Share on Facebook" class="social-icon" border="0"></a> <a href="mailto:?body=Infographic:%2029%20million%20vehicles%20affected%20by%20GM%20recalls%20this%20year. %0d%0dhttp%3A%2F%2Fbit.ly%2F1wyMp5r&subject=GM%20Recalls" onclick="var sharer = window.open('http://usatoday30.usatoday.com/_common/_dialogs/fb-share-done.html','sharer','toolbar=0,status=0,width=580,height=400,top=200,left=200');setTimeout(function() {sharer.close();}, 500);void(0);" target="sharer"><img src="img/email.png" alt="Share on Email" class="social-icon" border="0"></a> </div>
+
+    
+
+    <div id="car-controls" class="control-bar">
+      <div id="filters" >    
+        <div id="filter-list2"  data-filter-group="recall-type">
+          <h3 class="filter-head">Models recalled, sorted by date:</h3>
+          <ul class="">
+            <li data-filter="" class="active toggle-button">show all</li>
+            <li data-filter=".POWERTRAIN" class="POWERTRAIN toggle-button">Powertrain</li>
+            <li data-filter=".IGNITION" class="IGNITION toggle-button">Ignition</li>
+            <li data-filter=".ELECTRICAL" class="ELECTRICAL toggle-button">Electrical</li>
+            <li data-filter=".RESTRAINT" class="RESTRAINT toggle-button">Restraint</li>
+            <li data-filter=".INTERIOR" class="INTERIOR toggle-button">Interior</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    
+    <div id="car-iso"></div>
+    <h3 class="people-header">Total number of vehicles recalled:</h3>
+    <div class="key-wrap">
+      <span class="icon-simple-car key-icon"></span><span class="key-text">= 100,000 vehicles</span>
+    </div>
+    <div id="people-iso"></div>
+    <div class="people-number" id="people-number">0</div>
+  </div>
+  <div class="footer-wrap">
+    <h6><strong>Credits:</strong> Jeff Dionise, Karl Gelles, Mitchell Thorson, USA TODAY</h6>
+    <h6><strong>Source:</strong> GM, as of August 8, 2014</h6>
+  </div>
+  
+  <div class="modal tile">
+    <div class="close-button" id="modal-close"></div>
+      <div id="modal-content"></div>
+  </div>
+  <div id="modal-fade"></div>
+</div>
+
+
+
+<div class="pop-modal population" id="population-modal">
+  <div class="close-button" id="population-close"></div>
+  <div id="population-content"></div>
+</div>
+
+<script id="population-template" type="text/x-handlebars-template">
+    
+    <ul>
+      <li class="list-key"><span class="left">Recall Category:</span><span class="right">Population Affected:</span></li>
+      <li class="POWERTRAIN"><span class="left">powertrain</span><span class="right">{{numberWithCommas powertrain}}</span></li>
+      <li class="IGNITION"><span class="left">ignition</span><span class="right">{{numberWithCommas ignition}}</span></li>
+      <li class="ELECTRICAL"><span class="left">electrical</span><span class="right">{{numberWithCommas electrical}}</span></li>
+      <li class="RESTRAINT"><span class="left">restraint</span><span class="right">{{numberWithCommas restraint}}</span></li>
+      <li class="INTERIOR"><span class="left">interior</span><span class="right">{{numberWithCommas interior}}</span></li>
+      <li class="TOTAL"><span class="left">total</span><span class="right">{{numberWithCommas total}}</span></li>
+    </ul>
+
+</script>
+
+<script id="popup-template" type="text/x-handlebars-template">
+    
+    <div class="icon-{{vehicle_category}}-{{colorIndex}} popupIcon"></div>
+    <h4 class="model-name">{{models}}</h4>
+    <h3 class="issue">{{subject}}</h3>
+    <h3 class="recall-date">Recall Date: {{recall_date}}</h3>
+
+</script>
+
+<script id="small-template" type="text/x-handlebars-template">
+  <div id="{{appId}}" class="small-tile {{vehicle_category}} {{problem_category}}" data-category="{{vehicle_category}}" data-problem="{{problem_category}}" data-name="{{models}}" data-date="{{recall_date}}">
+    <div class="car-tooltip">{{models}}</div>
+    <div class="icon-{{vehicle_category}}-{{colorIndex}} small-icon" ></div>
+  </div>
+</script>
+
+<script id="people-tile-template" type="text/x-handlebars-template">
+  <div class="people-tile {{problem_category}}" data-problem="{{problem_category}}">
+    
+    <div class="icon-simple-car-{{colorIndex}} person-icon" ></div>
+  </div>
+</script>
+
+<script>
+      /* grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license. */
+window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.createElementNS||!t.document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||window.opera&&-1===navigator.userAgent.indexOf("Chrome")),o=function(o){var a=t.document.createElement("link"),r=t.document.getElementsByTagName("script")[0];a.rel="stylesheet",a.href=e[o&&n?0:o?1:2],a.media="only x",r.parentNode.insertBefore(a,r),setTimeout(function(){a.media="all"})},a=new t.Image;a.onerror=function(){o(!1)},a.onload=function(){o(1===a.width&&1===a.height)},a.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="}};
+
+      grunticon(["icons/output/icons.data.svg.css", "icons/output/icons.data.png.css", "icons/output/icons.fallback.css"]);
+    </script>
+    <noscript><link href="icons/output/icons.fallback.css" rel="stylesheet"></noscript>
+</body>
+</html>

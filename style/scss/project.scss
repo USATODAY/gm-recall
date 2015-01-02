@@ -1,0 +1,764 @@
+$blue: #1b9cfa;
+$orange: #fa6622;
+$yellow: #fcc92e;
+$silver: #c4c4c4;
+$purple: #c876d8;
+
+* {
+   -moz-box-sizing:    border-box;   /* Firefox 1, probably can drop this */
+   -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
+    box-sizing:        border-box;   /* Everything else */
+}
+@import 'bits';
+@import 'buttons';
+
+body, div, html, {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+  height: 100%;
+  @media (max-width: 800px) {
+    font-size: 90%;
+  }
+}
+
+body {
+  background: url(../img/noise.png);
+  font-family: "Futura Today", Arial,sans-serif;
+  height: 100%;
+}
+
+.group {
+  &:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+#header {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.head-section h2 {
+  color: $medium-grey;
+  font-family: "Futura Today Bold", Arial,sans-serif;
+  font-size: 2.8em;
+  margin: 0.5em 0;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.head-content-wrap {
+  padding: 0 2em;
+}
+
+.head-section .button {
+  margin: 0 0 2em 0;
+  width: 12em;
+}
+
+.chatter {
+  font: normal 16px/1.5 'arial','helvetica',sans-serif;
+  color: #666;
+  margin: 1em auto 1em 0;
+  @media(max-width: 800px ) {
+    width: 100%;
+  }
+}
+
+.wrap {
+  // border-top: solid 10px $blue;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  margin: 39px auto 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+.head-section {
+  background-color: #f8f8f8;
+  padding: 1em 0 0 0;
+  position: relative;
+  @extend .group;
+}
+
+.social {
+  margin: 0 auto;
+  position: absolute;
+  right: 1em;
+  top: 2em;
+  width: 150px;
+  @extend .group;
+  a {
+
+    width: 50px;
+    img {
+      display: inline-block;
+      float: left;
+      max-width: 100%;
+      width: 50px;
+    }
+  }
+  @media (max-width: 600px) {
+    position: relative;
+    right: auto;
+    top: 0;
+  }
+}
+
+.control-bar {
+  clear: both;
+  padding-top: 2em;
+}
+
+.small-tile {
+  height: 40px;
+  margin: 10px;
+  padding: .25em;
+  position: relative;
+  width: 80px;
+  i:before{
+    font-size: 1.5em;
+  }
+  &:hover {
+    cursor: pointer;
+    .car-tooltip {
+      bottom: 100%;
+      opacity: 1;
+      
+      transition: opacity 300ms ease;
+      z-index: 50;
+    }
+  }
+  @media(max-width: 400px) {
+    padding: 0;
+    width: 60px;
+  }
+}
+
+.car-tooltip {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  bottom: 0;
+  color: white;
+  font-size: 0.65em;
+  height: auto;
+  left: -25%;
+  opacity: 0;
+  padding: 1em;
+  position: absolute;
+  text-align: center;
+  
+  transition: all 300ms ease;
+  width: 150%;
+  
+}
+
+.small-icon {
+  background-size: 100%;
+  height: 30px;
+  width: 100%;
+}
+
+#container, #car-iso, #people-iso {
+  background: white;
+  @extend .group;
+  width: 100%;
+  transition: height 500ms ease;
+}
+
+#people-iso {
+  padding-left: 10px;
+}
+
+#container {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  padding: 3em 2em 2em 2em;
+}
+
+i:before{
+  font-size: 4em;
+}
+
+.issue {
+  text-transform: uppercase;
+}
+
+.model-name {
+  font-family: "Futura Today Bold", Arial,sans-serif;
+  padding-bottom: 1em;
+}
+
+.POWERTRAIN i, .POWERTRAIN .issue {
+  color: $blue;
+}
+
+.IGNITION i, .IGNITION .issue {
+  color: $orange;
+}
+
+.RESTRAINT i, .RESTRAINT .issue {
+  color: $silver;
+}
+
+.ELECTRICAL i, .ELECTRICAL .issue {
+  color: $yellow
+}
+
+.INTERIOR i, .INTERIOR .issue {
+  color: $purple;
+}
+
+.button-group li {
+  // clear: both;
+  display: inline-block;
+  margin-right: 10px;
+  &:hover {
+    cursor: pointer;
+  }
+  margin-top: 1em;
+  i {
+    background-size: 100%;
+    display: inline-block;
+    // font-size: 0.25em;
+    position: relative;
+    top: 0.25em;
+    width: 2.5em;
+    height: 1em;
+    
+
+  }
+  
+}
+
+.toggle-button {
+  display: inline-block;
+  padding: 0.5em;
+  // background-color: white;
+  color: $medium-grey;
+  border: solid 1px $medium-grey;
+  font-family: "Futura Today Bold", Arial,sans-serif;
+  font-size: .8em;
+  float: left;
+  margin-right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 500ms ease;
+  width: 16.6667%;
+  &.active, &:hover {
+    cursor: pointer;
+    background-color: $medium-grey;
+    color: white;
+    transition: all 500ms ease;
+  }
+  @media (max-width: 600px) {
+    padding: 1em;
+    width: 33.3333333333%;
+  }
+}
+
+.open .open-button {
+    background-color: $medium-grey;
+    box-shadow: $shadow;
+    color: white;
+    transition: all 500ms ease;
+}
+
+#filter-list li {
+
+}
+
+#filters ul, #sorts ul { list-style: none; margin: 0; padding: 0;}
+
+.button-group h4{
+  color: $medium-grey;
+  font-family: "Futura Today Bold", Arial,sans-serif;
+  margin: 0;
+  position: relative;
+}
+
+.filter-head {
+  margin-left: 1.5em;
+   @extend .people-header;
+}
+
+.filter{
+  display: inline-block;
+  margin-right: 3px;
+  height: 10px;
+  width: 10px;
+  position: relative;
+  top: 1px;
+  border: 2px solid $medium-grey;
+  border-radius: 15px;
+}
+
+#filters .active, #sorts .active {
+  // color: $medium-grey;
+  .filter {
+    background: $blue;
+    border: 2px solid $blue;
+  }
+}
+
+
+.button-group{
+  display: inline-block;
+  @extend .group;
+  float: left;
+  margin-right: 2%;
+  position: relative;
+  // width: 31.333333%;
+
+  @media (max-width: 800px) {
+    // float: none;
+    // margin-top: 1em !important;
+    // width: 100%
+  }
+}
+
+#filters {
+  // width: 50%;
+  // .button-group {
+  //   width: 50%;
+  // }
+}
+
+#sorts {
+  
+}
+
+.tile {
+  background-color: rgb(80, 80, 80);
+  border-radius: 12px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  color: white;
+  height: 300px;
+  padding: 2em 1em;
+  text-align: center;
+  width: 400px;
+  h4{
+    border-bottom: dotted 3px white;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  @media (max-width: 400px) {
+    left: 10%;
+    transform: translate(0, 0);
+    width: 80%;
+  }
+}
+
+.modal, .pop-modal {
+  left: 50%;
+  position: fixed;
+  top: -500px;
+  transition: top 500ms ease;
+  transform: translate(-200px, 0);
+
+  @media (max-width: 400px) {
+    left: 10%;
+    transform: translate(0, 0);
+
+  }
+}
+
+.modal-active {
+  .modal {
+    top: 100px;
+    
+    transition: top 500ms ease;
+    z-index: 100;
+
+    @media(max-height: 400px) {
+      top: 10px;
+    }
+  }
+  
+}
+
+.pop-modal {
+  @extend .tile;
+}
+
+.pop-modal-active {
+  .pop-modal {
+    top: 100px;
+    
+    transition: top 500ms ease;
+    z-index: 100;
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: -23px;
+  right: -27px;
+  cursor: pointer;
+  background: url('../img/modal-close-btn.png');
+  display: block;
+  height: 50px;
+  width: 50px;
+  &:hover{
+    background-position: 50px 50px;
+    cursor: pointer;
+  }
+}
+
+#modal-fade {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -5;
+  opacity: 0;
+  transition: all 500ms ease;
+  background-color: #fff;
+  &.fade-in {
+    opacity: 0.9;
+    transition: all 500ms ease;
+    z-index: 99;
+  }
+}
+
+.footer-wrap {
+  padding: 10px;
+  background: $light-grey;
+  min-height: 20px;
+  @extend .group;
+}
+
+.footer-wrap h6 {
+  float: left;
+  color: #999;
+  font: normal 11px/1.5 arial, Helvetica, sans-serif;
+  margin: 2px 0 0 10px;
+  width: 80%;
+}
+
+.key {
+  padding-left: 2em;
+  padding-top: 1em;
+  ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    margin-right: 1em;
+  }
+  .key-box {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+  }
+  h3 {
+    color: $medium-grey;
+    display: inline-block;
+    font-family: "Futura Today Light", Arial,sans-serif;
+    font-size: 1em;
+    margin-right: 1em;
+    text-transform: uppercase;
+  }
+}
+
+#filters {
+  li.POWERTRAIN  {
+    border: solid 1px $blue;
+    color: $blue;
+    &.active, &:hover {
+      background-color: $blue;
+      color: white;
+      transition: all 500ms ease;
+    }
+  }
+
+  li.IGNITION  {
+    border: solid 1px $orange;
+    color: $orange;
+    &.active, &:hover {
+      background-color: $orange;
+      color: white;
+      transition: all 500ms ease;
+    }
+  }
+
+  li.RESTRAINT  {
+    border: solid 1px $silver;
+    color: $silver;
+    &.active, &:hover {
+      background-color: $silver;
+      color: white;
+      transition: all 500ms ease;
+    }
+  }
+
+  li.ELECTRICAL  {
+    border: solid 1px $yellow;
+    color: $yellow;
+    &.active, &:hover {
+      background-color: $yellow;
+      color: white;
+      transition: all 500ms ease;
+    }
+  }
+
+  li.INTERIOR  {
+    border: solid 1px $purple;
+    color: $purple;
+    &.active, &:hover {
+       background-color: $purple;
+      color: white;
+     transition: all 500ms ease;
+    }
+  }
+}
+
+li.POWERTRAIN  {
+  color: $blue;
+}
+
+li.IGNITION  {
+  color: $orange;
+}
+
+li.RESTRAINT  {
+  color: $silver;
+}
+
+li.ELECTRICAL  {
+  color: $yellow;
+}
+
+li.INTERIOR  {
+  color: $purple;
+}
+
+
+.POWERTRAIN  .key-box{
+  background-color: $blue;
+}
+
+.IGNITION .key-box {
+  background-color: $orange;
+}
+
+.RESTRAINT .key-box {
+  background-color: $silver;
+}
+
+.ELECTRICAL .key-box {
+  background-color: $yellow
+}
+
+.INTERIOR .key-box {
+  background-color: $purple;
+}
+
+.population-button {
+  border: solid 1px $medium-grey;
+  // border-radius: 10px;
+  color: $medium-grey;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  padding: 0.5em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 500ms ease;
+  width: 10em;
+  &:hover{
+    cursor: pointer;
+    background-color: $medium-grey;
+    color: white;
+    transition: all 500ms ease;
+  }
+}
+
+.pop-modal{
+
+  ul {
+    font-family: "Futura Today Bold", Arial,sans-serif;
+    font-size: 1.2em;
+    list-style: none;
+    margin: 1em 0 0 0;
+    padding: 0;
+    text-transform: uppercase;
+    li {
+      display: block;
+      @extend .group;
+      &.list-key{
+        font-family: "Futura Today Light", Arial,sans-serif;
+        font-size: 1rem;
+        @media(max-width: 400px) {
+          font-size: .75rem;
+        }
+      }
+      &.TOTAL{
+        border-top: solid 1px white;
+      }
+    }
+  }
+  .left {
+    float: left;
+    text-align: left;
+  }
+  .right {
+    float: right;
+    text-align: right;
+  }
+}
+
+.popupIcon {
+  background-size: 100%;
+  height: 3em;
+  margin: 0 auto;
+  width: 8em;
+}
+
+
+.drop-down{
+  background-color: #f8f8f8;
+  box-shadow: $shadow;
+  max-height: 0;
+  margin-top: 0;
+  min-width: 200px;
+  overflow: hidden;
+  padding: 0 2em;
+  position: absolute;
+  z-index: 500;
+  transition: all 300ms ease;
+  width: 400px;
+  @media(max-width: 400px) {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  
+}
+.open {
+    .drop-down{
+      max-height: 800px;
+      padding: 2em;
+      transition: all 300ms ease;
+    }
+    
+  }
+
+.open-button {
+  display: inline-block;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.toggle-tab {
+  border: solid 1px $medium-grey;
+  border-radius: 5px;
+  float: left;
+  margin: 0 auto;
+
+  width: 12em;
+  @extend .group;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.toggle-item{
+  display: inline-block;
+  border-radius: 5px;
+  margin: 0;
+  padding: .5em;
+  text-align: center;
+  text-transform: uppercase;
+  width: 50%;
+
+  &.current {
+    background-color: $medium-grey;
+    box-shadow: $shadow;
+    color: white;
+  }
+}
+
+.people-tile {
+  display: inline-block;
+  height: 22PX;
+width: 35PX;
+}
+
+.person-icon {
+  background-size: 100%;
+  width: 29.7PX;
+  height: 9.45PX;
+}
+
+
+.key-icon{
+  background-size: 100%;
+  display: inline-block;
+  width: 29.7PX;
+  height: 9.45PX;
+}
+
+.key-wrap {
+  display: inline-block;
+  margin-bottom: 1em;
+  margin-left: 10px;
+  // height: 1em;
+  @media (max-width: 400px) {
+    height: auto;
+  }
+}
+
+.key-text {
+  color: $medium-grey;
+  display: inline-block;
+  transform: translate(0.5em, 0em);
+}
+
+.people-header {
+  color: $medium-grey;
+  font-family: "Futura Today Bold", Arial,sans-serif;
+  font-size: 1.4em;
+  padding-left: 10px;
+}
+
+#people-number {
+  color: $medium-grey;
+  display: inline-block;
+  font-family: "Futura Today Bold", Arial,sans-serif;
+  font-size: 1.5em;
+  margin-left: 10px;
+  &.POWERTRAIN  {
+  color: $blue;
+  }
+
+  &.IGNITION  {
+    color: $orange;
+  }
+
+  &.RESTRAINT  {
+    color: $silver;
+  }
+
+  &.ELECTRICAL  {
+    color: $yellow;
+  }
+
+  &.INTERIOR  {
+    color: $purple;
+  }
+}
+
